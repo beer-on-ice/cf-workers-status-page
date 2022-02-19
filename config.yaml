@@ -15,10 +15,68 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+ 
+  - id: self-air-page # unique identifier
+    name: '机场'
+    description: '机场面板' # default=empty
+    url: 'https://sspanel.oracleusa.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
   - id: self-nav-page # unique identifier
     name: '导航面板监控'
     description: '导航面板' # default=empty
     url: 'https://nav.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-clash-page # unique identifier
+    name: '订阅转换'
+    description: '订阅转换' # default=empty
+    url: 'https://clash.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-daili-page # unique identifier
+    name: '公益代理池'
+    description: '公益代理池' # default=empty
+    url: 'https://bt.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-daili2-page # unique identifier
+    name: '公益代理池2'
+    description: '公益代理池2' # default=empty
+    url: 'https://freeway.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-list-page # unique identifier
+    name: '个人网盘'
+    description: '个人网盘' # default=empty
+    url: 'https://list.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+  
+
+  - id: self-pan-page # unique identifier
+    name: '个人网盘2'
+    description: '个人网盘2' # default=empty
+    url: 'https://pan.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-blog-page # unique identifier
+    name: '个人博客'
+    description: '个人博客' # default=empty
+    url: 'https://www.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -31,10 +89,12 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     
-  - id: self-music-page # unique identifier
-    name: '个人博客'
-    description: '个人博客' # default=empty
-    url: 'http://159.75.70.243/' # URL to fetch
+  - id: self-short-page # unique identifier
+    name: '短链接'
+    description: '短链接' # default=empty
+    url: 'https://xg.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+  
+
