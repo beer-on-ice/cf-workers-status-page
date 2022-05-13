@@ -59,7 +59,7 @@ monitors:
   - id: self-nezha-page # unique identifier
     name: '阅读'
     description: '阅读' # default=empty
-    url: 'http://www.565869.xyz:7777/' # URL to fetch
+    url: 'https://www.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -71,15 +71,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    
-  - id: self-nezha-page # unique identifier
-    name: '探针'
-    description: '探针' # default=empty
-    url: 'http://ly.565869.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    
+        
   - id: self-short-page # unique identifier
     name: '短链接'
     description: '短链接' # default=empty
