@@ -47,35 +47,10 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-daili2-page # unique identifier
-    name: '公益代理池2'
-    description: '公益代理池2' # default=empty
-    url: 'https://freeway.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-list-page # unique identifier
-    name: '个人网盘'
-    description: '个人网盘' # default=empty
-    url: 'https://list.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-  
-
-  - id: self-pan-page # unique identifier
-    name: '个人网盘2'
-    description: '个人网盘2' # default=empty
-    url: 'https://pan.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
    
   - id: self-pan-page # unique identifier
-    name: '个人网盘3'
-    description: '个人网盘3' # default=empty
+    name: '个人网盘'
+    description: '个人网盘' # default=empty
     url: 'http://rk.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
