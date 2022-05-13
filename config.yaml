@@ -19,7 +19,7 @@ monitors:
   - id: self-air-page # unique identifier
     name: '机场'
     description: '机场面板' # default=empty
-    url: 'https://sspanel.oracleusa.ml/' # URL to fetch
+    url: 'https://airport.oracleusa.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -72,11 +72,27 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-
+   
+  - id: self-pan-page # unique identifier
+    name: '个人网盘3'
+    description: '个人网盘3' # default=empty
+    url: 'http://rk.565869.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+   
+  - id: self-nezha-page # unique identifier
+    name: '阅读'
+    description: '阅读' # default=empty
+    url: 'http://www.565869.xyz:7777/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+  
   - id: self-blog-page # unique identifier
     name: '个人博客'
     description: '个人博客' # default=empty
-    url: 'https://www.565869.xyz/' # URL to fetch
+    url: 'https://ly.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
