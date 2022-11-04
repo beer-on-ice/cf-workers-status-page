@@ -15,17 +15,9 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
- 
-  - id: self-air-page # unique identifier
-    name: '机场'
-    description: '机场面板' # default=empty
-    url: 'https://airport.oracleusa.ml/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
 
   - id: self-nav-page # unique identifier
-    name: '导航面板监控'
+    name: '监控 - 导航面板'
     description: '导航面板' # default=empty
     url: 'https://nav.666986.xyz/' # URL to fetch
     method: GET # default=GET
@@ -33,7 +25,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: self-clash-page # unique identifier
-    name: '订阅转换'
+    name: '监控 - 订阅转换'
     description: '订阅转换' # default=empty
     url: 'https://clash.666986.xyz/' # URL to fetch
     method: GET # default=GET
@@ -41,24 +33,32 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: self-daili-page # unique identifier
-    name: '公益代理池'
+    name: '监控 - 公益代理池'
     description: '公益代理池' # default=empty
     url: 'https://bt.666986.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+    
+  - id: self-air-page # unique identifier
+    name: '监控 - 探针'
+    description: '山神庙' # default=empty
+    url: 'http://ly.565869.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
    
   - id: self-pan-page # unique identifier
-    name: '个人网盘'
+    name: '监控 - 个人网盘'
     description: '个人网盘' # default=empty
-    url: 'http://rk.565869.xyz/' # URL to fetch
+    url: 'https://list.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
    
   - id: self-nezha-page # unique identifier
-    name: '阅读'
-    description: '阅读' # default=empty
+    name: '监控 - webSSH'
+    description: 'webSSH' # default=empty
     url: 'https://www.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
