@@ -33,9 +33,9 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: self-daili-page # unique identifier
-    name: '监控 - 公益代理池'
-    description: '公益代理池' # default=empty
-    url: 'https://bt.666986.xyz/' # URL to fetch
+    name: '监控 - 订阅托管'
+    description: '订阅托管' # default=empty
+    url: 'https://sub.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
