@@ -19,7 +19,7 @@ monitors:
   - id: self-nav-page # unique identifier
     name: '监控 - 导航面板'
     description: '导航面板' # default=empty
-    url: 'https://nav.666986.xyz/' # URL to fetch
+    url: 'https://nav.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -27,7 +27,7 @@ monitors:
   - id: self-clash-page # unique identifier
     name: '监控 - 订阅转换'
     description: '订阅转换' # default=empty
-    url: 'https://clash.666986.xyz/' # URL to fetch
+    url: 'https://sub.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -43,7 +43,7 @@ monitors:
   - id: self-air-page # unique identifier
     name: '监控 - 探针'
     description: '山神庙' # default=empty
-    url: 'http://ly.565869.xyz/' # URL to fetch
+    url: 'http://blog.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -51,7 +51,7 @@ monitors:
   - id: self-pan-page # unique identifier
     name: '监控 - 个人网盘'
     description: '个人网盘' # default=empty
-    url: 'https://list.565869.xyz/' # URL to fetch
+    url: 'https://list.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -67,7 +67,7 @@ monitors:
   - id: self-blog-page # unique identifier
     name: '个人博客'
     description: '个人博客' # default=empty
-    url: 'https://ly.565869.xyz/' # URL to fetch
+    url: 'https://blog.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
