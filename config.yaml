@@ -41,9 +41,9 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     
   - id: self-air-page # unique identifier
-    name: '监控 - 探针'
-    description: '山神庙' # default=empty
-    url: 'http://blog.mistyhill.ml/' # URL to fetch
+    name: '监控 - 阅读'
+    description: '阅读' # default=empty
+    url: 'https://xg.565869.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -57,9 +57,9 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
    
   - id: self-nezha-page # unique identifier
-    name: '监控 - webSSH'
-    description: 'webSSH' # default=empty
-    url: 'https://www.565869.xyz/' # URL to fetch
+    name: '监控 - kuma'
+    description: 'kuma' # default=empty
+    url: 'https://kuma.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -75,7 +75,7 @@ monitors:
   - id: self-short-page # unique identifier
     name: '短链接'
     description: '短链接' # default=empty
-    url: 'https://xg.565869.xyz/' # URL to fetch
+    url: 'https://s.sob.im/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
