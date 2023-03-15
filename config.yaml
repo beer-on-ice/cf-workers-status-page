@@ -32,10 +32,27 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
+    
+  - id: self-blog-page # unique identifier
+    name: '个人博客'
+    description: '个人博客' # default=empty
+    url: 'https://blog.mistyhill.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
   - id: self-daili-page # unique identifier
     name: '监控 - 订阅托管'
     description: '订阅托管' # default=empty
     url: 'https://host.mistyhill.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-short-page # unique identifier
+    name: '短链接'
+    description: '短链接' # default=empty
+    url: 'https://s.sob.im/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -55,6 +72,14 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+  
+  - id: self-pan-page # unique identifier
+    name: '监控 - 阿里网盘'
+    description: '阿里网盘' # default=empty
+    url: 'https://ali.mistyhill.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
    
   - id: self-nezha-page # unique identifier
     name: '监控 - kuma'
@@ -63,21 +88,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-  
-  - id: self-blog-page # unique identifier
-    name: '个人博客'
-    description: '个人博客' # default=empty
-    url: 'https://blog.mistyhill.ml/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-        
-  - id: self-short-page # unique identifier
-    name: '短链接'
-    description: '短链接' # default=empty
-    url: 'https://s.sob.im/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+
+      
   
 
