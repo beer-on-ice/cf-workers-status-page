@@ -76,7 +76,7 @@ monitors:
   - id: self-pan-page # unique identifier
     name: '监控 - 阿里网盘'
     description: '阿里网盘' # default=empty
-    url: 'https://ali.mistyhill.ml/' # URL to fetch
+    url: 'https://pan.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
