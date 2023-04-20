@@ -91,8 +91,8 @@ monitors:
     
   - id: self-probe-page # unique identifier
     name: '监控 - probe'
-    description: 'kuma' # default=empty
-    url: 'https://serverstatus.hillteam.repl.co/' # URL to fetch
+    description: 'probe' # default=empty
+    url: 'https://probe.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -100,7 +100,7 @@ monitors:
   - id: self-reader-page # unique identifier
     name: '监控 - 阅读'
     description: 'kuma' # default=empty
-    url: 'https://reader.hillteam.repl.co/' # URL to fetch
+    url: 'https://reader.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -108,7 +108,7 @@ monitors:
   - id: self-panindex-page # unique identifier
     name: '监控 - panindex'
     description: 'kuma' # default=empty
-    url: 'https://panindex.hillteam.repl.co/' # URL to fetch
+    url: 'https://disk.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
