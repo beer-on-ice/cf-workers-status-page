@@ -103,7 +103,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-- id: self-store-page # unique identifier
+  - id: self-store-page # unique identifier
     name: '云服务 - glitch - 网盘dl'
     description: '网盘store' # default=empty
     url: 'https://gt-dl.glitch.me/' # URL to fetch
@@ -111,7 +111,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-- id: self-store-page # unique identifier
+  - id: self-store-page # unique identifier
     name: '云服务 - glitch - 网盘ui'
     description: '网盘store' # default=empty
     url: 'https://gt-ui.glitch.me/' # URL to fetch
@@ -119,7 +119,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-- id: self-store-page # unique identifier
+  - id: self-store-page # unique identifier
     name: '云服务 - render - 网盘store'
     description: '网盘store' # default=empty
     url: 'https://store.666986.xyz/' # URL to fetch
@@ -127,7 +127,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-- id: self-pm-page # unique identifier
+  - id: self-pm-page # unique identifier
     name: '云服务 - render - 网盘pm'
     description: '网盘pm' # default=empty
     url: 'https://pm.666986.xyz/' # URL to fetch
@@ -135,7 +135,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-- id: self-disk-page # unique identifier
+  - id: self-disk-page # unique identifier
     name: '云服务 - cf - 网盘disk'
     description: '网盘disk' # default=empty
     url: 'https://disk.666986.xyz/' # URL to fetch
@@ -143,7 +143,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-- id: self-githubblog-page # unique identifier
+  - id: self-githubblog-page # unique identifier
     name: '云服务 - github - 托管博客'
     description: '托管博客' # default=empty
     url: 'https://blog.666986.xyz/' # URL to fetch
