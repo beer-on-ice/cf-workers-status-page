@@ -143,6 +143,30 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
+  - id: self-gds-page # unique identifier
+    name: '云服务 - cf - 网盘gds'
+    description: '网盘gds' # default=empty
+    url: 'https://cf-gds.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-gd-page # unique identifier
+    name: '云服务 - cf - 网盘gd'
+    description: '网盘gd' # default=empty
+    url: 'https://cf-gd.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-bdpcs-page # unique identifier
+    name: '云服务 - cf - 网盘bdpcs'
+    description: '网盘bdpcs' # default=empty
+    url: 'https://bdpcs.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
   - id: self-githubblog-page # unique identifier
     name: '云服务 - github - 托管博客'
     description: '托管博客' # default=empty
