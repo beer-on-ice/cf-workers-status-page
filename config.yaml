@@ -1,5 +1,5 @@
 settings:
-  title: '站点检测'
+  title: '稳定站点 在线检测'
   url: 'https://status.mistyhill.ml' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -11,12 +11,12 @@ settings:
   monitorLabelNotOperational: '发生故障'
   monitorLabelNoData: '暂无数据'
   dayInHistogramNoData: '暂无数据'
-  dayInHistogramOperational: 'All good'
+  dayInHistogramOperational: '全部正常'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
   - id: self-nav-page # unique identifier
-    name: '监控 - 导航面板'
+    name: '云服务 - cf - 导航面板'
     description: '导航面板' # default=empty
     url: 'https://nav.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
@@ -24,95 +24,71 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: self-clash-page # unique identifier
-    name: '监控 - 订阅转换'
+    name: '云服务 - netlify - 订阅转换'
     description: '订阅转换' # default=empty
     url: 'https://sub.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: self-nav-page # unique identifier
-    name: '监控 - 诺星导航'
+  - id: self-notionnav-page # unique identifier
+    name: '云服务 - vercel - 诺星导航'
     description: '诺星导航' # default=empty
     url: 'https://notion-nav.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: self-blog-page # unique identifier
-    name: '监控 - 个人博客'
-    description: '个人博客' # default=empty
+  - id: self-notionblog-page # unique identifier
+    name: '云服务 - vercel - 诺星博客'
+    description: '诺星博客' # default=empty
     url: 'https://notion-blog.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: cloud-daili-page # unique identifier
-    name: '监控 - 订阅托管'
+  - id: self-share-page # unique identifier
+    name: '云服务 - replit - 订阅托管'
     description: '订阅托管' # default=empty
     url: 'https://share.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-
-  - id: cloud-short-page # unique identifier
-    name: '监控 - 短链接'
-    description: '短链接' # default=empty
-    url: 'https://s.mistyhill.ml/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    
-  - id: cloud-air-page # unique identifier
-    name: '监控 - 浏览器'
-    description: '浏览器' # default=empty
-    url: 'https://s.sob.im/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-   
-  - id: cloud-pan-page # unique identifier
-    name: '监控 - 个人网盘'
-    description: '个人网盘' # default=empty
-    url: 'https://list.mistyhill.ml/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
   
   - id: cloud-pan-page # unique identifier
-    name: '监控 - 阿里网盘'
+    name: '云服务 - replit - 阿里网盘'
     description: '阿里网盘' # default=empty
     url: 'https://pan.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-nezha-page # unique identifier
+    name: '云服务 - replit - 监控Nezha'
+    description: '监控Nezha' # default=empty
+    url: 'https://nezha.mistyhill.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
    
   - id: self-kuma-page # unique identifier
-    name: '监控 - kuma'
-    description: 'kuma' # default=empty
+    name: '云服务 - replit - 监控Kuma'
+    description: '监控Kuma' # default=empty
     url: 'https://kuma.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: self-nezha-page # unique identifier
-    name: '监控 - nezha'
-    description: 'nezha' # default=empty
-    url: 'https://nezha.mistyhill.ml/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    
   - id: self-probe-page # unique identifier
-    name: '监控 - probe'
-    description: 'probe' # default=empty
+    name: '云服务 - replit - 监控Probe'
+    description: '监控Probe' # default=empty
     url: 'https://probe.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     
   - id: self-reader-page # unique identifier
-    name: '监控 - 阅读'
+    name: '云服务 - replit - 阅读'
     description: '阅读' # default=empty
     url: 'https://reader.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
@@ -120,13 +96,57 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
   
   - id: self-panindex-page # unique identifier
-    name: '监控 - panindex'
-    description: 'panindex' # default=empty
+    name: '云服务 - replit - 网盘PanIndex'
+    description: '网盘PanIndex' # default=empty
     url: 'https://disk.mistyhill.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-      
-  
+- id: self-store-page # unique identifier
+    name: '云服务 - glitch - 网盘dl'
+    description: '网盘store' # default=empty
+    url: 'https://gt-dl.glitch.me/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
 
+- id: self-store-page # unique identifier
+    name: '云服务 - glitch - 网盘ui'
+    description: '网盘store' # default=empty
+    url: 'https://gt-ui.glitch.me/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+- id: self-store-page # unique identifier
+    name: '云服务 - render - 网盘store'
+    description: '网盘store' # default=empty
+    url: 'https://store.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+- id: self-pm-page # unique identifier
+    name: '云服务 - render - 网盘pm'
+    description: '网盘pm' # default=empty
+    url: 'https://pm.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+- id: self-disk-page # unique identifier
+    name: '云服务 - cf - 网盘disk'
+    description: '网盘disk' # default=empty
+    url: 'https://disk.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+- id: self-githubblog-page # unique identifier
+    name: '云服务 - github - 托管博客'
+    description: '托管博客' # default=empty
+    url: 'https://blog.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
