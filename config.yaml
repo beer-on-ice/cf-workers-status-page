@@ -24,9 +24,25 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
 
   - id: self-clash-page # unique identifier
-    name: '云服务 - netlify - 订阅转换'
+    name: '云服务 - netlify - sub'
     description: '订阅转换' # default=empty
     url: 'https://sub.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+  
+  - id: self-clash-suber # unique identifier
+    name: '云服务 - netlify - suber'
+    description: 'Sub Store' # default=empty
+    url: 'https://suber.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-clash-box # unique identifier
+    name: '云服务 - netlify - box'
+    description: 'BoxJS' # default=empty
+    url: 'https://box.666986.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -47,114 +63,10 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: self-share-page # unique identifier
-    name: '云服务 - replit - 订阅托管'
-    description: '订阅托管' # default=empty
-    url: 'https://share.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-  
-  - id: cloud-pan-page # unique identifier
-    name: '云服务 - replit - 阿里网盘'
-    description: '阿里网盘' # default=empty
-    url: 'https://pan.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-nezha-page # unique identifier
-    name: '云服务 - replit - 监控Nezha'
-    description: '监控Nezha' # default=empty
-    url: 'https://nezha.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-   
-  - id: self-kuma-page # unique identifier
-    name: '云服务 - replit - 监控Kuma'
-    description: '监控Kuma' # default=empty
-    url: 'https://kuma.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-probe-page # unique identifier
-    name: '云服务 - replit - 监控Probe'
-    description: '监控Probe' # default=empty
-    url: 'https://probe.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    
-  - id: self-reader-page # unique identifier
-    name: '云服务 - replit - 阅读'
-    description: '阅读' # default=empty
-    url: 'https://reader.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-  
   - id: self-panindex-page # unique identifier
-    name: '云服务 - replit - 网盘PanIndex'
-    description: '网盘PanIndex' # default=empty
-    url: 'https://disk.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-store-page # unique identifier
-    name: '云服务 - glitch - 网盘dl'
-    description: '网盘store' # default=empty
-    url: 'https://gt-dl.glitch.me/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-store-page # unique identifier
-    name: '云服务 - glitch - 网盘ui'
-    description: '网盘store' # default=empty
-    url: 'https://gt-ui.glitch.me/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-store-page # unique identifier
-    name: '云服务 - render - 网盘store'
-    description: '网盘store' # default=empty
-    url: 'https://store.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-pm-page # unique identifier
-    name: '云服务 - render - 网盘pm'
-    description: '网盘pm' # default=empty
-    url: 'https://pm.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-disk-page # unique identifier
-    name: '云服务 - cf - 网盘disk'
-    description: '网盘disk' # default=empty
-    url: 'https://disk.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-gds-page # unique identifier
-    name: '云服务 - cf - 网盘gds'
-    description: '网盘gds' # default=empty
-    url: 'https://cf-gds.666986.xyz/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-
-  - id: self-gd-page # unique identifier
-    name: '云服务 - cf - 网盘gd'
-    description: '网盘gd' # default=empty
-    url: 'https://cf-gd.666986.xyz/' # URL to fetch
+    name: '云服务 - vercel - 网盘TGSTORE'
+    description: '网盘TGSTORE' # default=empty
+    url: 'https://tgs.666986.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -171,6 +83,22 @@ monitors:
     name: '云服务 - github - 托管博客'
     description: '托管博客' # default=empty
     url: 'https://blog.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-githubblog-page # unique identifier
+    name: '云服务 - vercel - 啤酒屋'
+    description: '啤酒屋' # default=empty
+    url: 'https://talk.666986.xyz/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: self-githubblog-page # unique identifier
+    name: '云服务 - vercel - BIO'
+    description: 'BIO' # default=empty
+    url: 'https://bio.666986.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
